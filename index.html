@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Varela+Round'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <style>
+      body {
+        background: #48d2bd;
+        color: #fff;
+        font-family: 'Varela Round', sans-serif;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        min-width: 320px;
+        margin: -30px 0 0;
+      }
+
+      .container h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+
+      .container h1 a {
+        display: inline-block;
+        background: #000;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 10px 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+      }
+
+      .container h1 a:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .container p {
+        margin-bottom: 30px;
+        color: #d6f2e4;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+      }
+
+      .container .social-media ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container .social-media ul li {
+        display: inline-block;
+        margin: 0 16px 0 0;
+        font-size: 14px;
+      }
+
+      .container .social-media ul li:last-child {
+        margin: 0;
+      }
+
+      .container .social-media ul li a {
+        display: block;
+        width: 16px;
+        color: #fff;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class='container'>
+      <h1>
+        <a data-sr='scale up 10%' href='https://github.com/Mkrealy'>mkrealy.github.io</a>
+        <span data-sr='top wait .3s 90px'>i</span>
+        <span data-sr='top wait .4s 90px'>s</span>
+        <span>&nbsp;</span>
+        <span data-sr='top wait .5s 90px'>c</span>
+        <span data-sr='top wait .6s 90px'>o</span>
+        <span data-sr='top wait .7s 90px'>m</span>
+        <span data-sr='top wait .8s 90px'>i</span>
+        <span data-sr='top wait .9s 90px'>n</span>
+        <span data-sr='top wait 1s 90px'>g</span>
+        <span>&nbsp;</span>
+        <span data-sr='top wait 1.1s 90px'>s</span>
+        <span data-sr='top wait 1.2s 90px'>o</span>
+        <span data-sr='top wait 1.3s 90px'>o</span>
+        <span data-sr='top wait 1.4s 90px'>n</span>
+        <span data-sr='top wait 1.5s 90px'>!</span>
+      </h1>
+      <p data-sr='bottom wait 1.5s 90px'>Güncellemelerden haberdar olmak için lütfen yakın gelecekte tekrar ziyaret edin..</p>
+      <div class='social-media'>
+        <ul>
+          <li data-sr='top wait 1.8s 90px'>
+            <a href=''>
+          <i class='fa fa-facebook'></i>
+        </a>
+          </li>
+          <li data-sr='top wait 1.9s 90px'>
+            <a href='https://www.twitter.com/mkrealy'>
+          <i class='fa fa-twitter'></i>
+        </a>
+          </li>
+          <li data-sr='top wait 2s 90px'>
+            <a href='https://www.instagram.com/mkrealy'>
+          <i class='fa fa-instagram'></i>
+        </a>
+          </li>
+          <li data-sr='top wait 2.1s 90px'>
+            <a href='mailto:mkrealy@gmail.com'>
+          <i class='fa fa-envelope'></i>
+        </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src='https://mintik.com/jQuery/jquery-1.10.2.min.js'></script>
+    <script src='scrollReveal.min.js'></script>
+    <script>
+      // Scroll Reveal
+      window.sr = new scrollReveal(config);
+
+      var config = {
+        easing: 'ease',
+        reset: true
+      }
+
+      // Font Settings
+      (function(d) {
+        var config = {
+            kitId: 'xyl8bgh',
+            scriptTimeout: 3000
+          },
+          h = d.documentElement,
+          t = setTimeout(function() {
+            h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = '//use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function() {
+          a = this.readyState;
+          if (f || a && a != "complete" && a != "loaded") return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s)
+      })(document);
+      //# sourceURL=pen.js
+
+    </script>
+  </body>
+
+</html>
